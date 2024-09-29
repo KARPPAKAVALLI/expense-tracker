@@ -15,7 +15,7 @@ public class RegisterDao {
 	public RegisterDao() throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 
-		connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/EXPENSE", "root", "Valli@14");
+		connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/EXPENSE", "root", "password");
 	}
 
 	public boolean addUser(String username, String password, String phone, String email) throws SQLException {
